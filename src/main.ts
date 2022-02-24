@@ -1,7 +1,7 @@
 /*
  * @Author: Lxx
  * @Date: 2022-01-21 15:11:21
- * @LastEditTime: 2022-02-22 15:51:41
+ * @LastEditTime: 2022-02-24 14:28:33
  * @LastEditors: Lxx
  * @Description: 
  * @FilePath: \vite\src\main.ts
@@ -9,6 +9,7 @@
  */
 import { createApp } from 'vue'
 import '@/mock/index' //mockjs模拟数据
+import '@/assets/css/a-icon/iconfont.js' //导入iconfont.js
 import Pinia from '@/store/index' // 初始化pinia商店
 import router from '@/router/index'
 import apis from '@/api/index'
