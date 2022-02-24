@@ -1,0 +1,8 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+    },
+    "vueCompilerOptions": {
+      "experimentalCompatMode": 2
+    },
+  }
