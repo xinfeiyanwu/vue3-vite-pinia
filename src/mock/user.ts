@@ -109,8 +109,8 @@ const data = {
         menuIcon: 'Bicycle',
         mate: ['凡间'],
         parentId: 0,
-        name: 'fanjian',
-        path: 'fanjian'
+        name: '',
+        path: ''
     }, {
         menuId: '4',
         menuName: '系统设置',
@@ -119,6 +119,14 @@ const data = {
         parentId: 0,
         name: 'sysSetting',
         path: 'sysSetting'
+    }, {
+        menuId: '5',
+        menuName: 'echarts图标',
+        menuIcon: 'AlarmClock',
+        mate: ['echarts图标'],
+        parentId: 0,
+        name: 'echarts',
+        path: 'echarts'
     }]
 }
 Mock.mock('/login', 'post', function (options: any) {

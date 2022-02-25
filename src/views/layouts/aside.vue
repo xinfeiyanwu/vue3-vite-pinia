@@ -1,7 +1,7 @@
 <!--
  * @Author: Lxx
  * @Date: 2022-01-21 17:39:25
- * @LastEditTime: 2022-02-24 09:07:30
+ * @LastEditTime: 2022-02-25 17:42:19
  * @LastEditors: Lxx
  * @Description: 
  * @FilePath: \vite\src\views\layouts\aside.vue
@@ -27,12 +27,10 @@
         onMounted
     } from 'vue'
     import {useRouter} from 'vue-router'
-    import {addRoutes} from '@/utils/addRoutes'
     import MenuItem from './menuItem.vue'
     import {useUserStore} from '@/store/user.ts'
 
     const userStore = useUserStore();
-    const router = useRouter()
     // pinia的state本身就是reactive类型
     console.log('userStore', isReactive(userStore));
     const menuRoutes = userStore.menus
@@ -44,9 +42,6 @@
         console.log(key, keyPath)
     }
     onMounted(()=>{
-        addRoutes(router, menuRoutes)
-        //刷新页面或者第一次登录默认跳转到home页面
-        router.push({name: 'home'})
     })
 </script>
 <style lang="scss" scoped>

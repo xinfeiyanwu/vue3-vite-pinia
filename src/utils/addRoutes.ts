@@ -1,7 +1,7 @@
 /*
  * @Author: Lxx
  * @Date: 2022-02-22 10:41:59
- * @LastEditTime: 2022-02-22 15:39:30
+ * @LastEditTime: 2022-02-25 12:02:43
  * @LastEditors: Lxx
  * @Description: 由路由菜单获取routes
  * @FilePath: \vite\src\utils\addRoutes.ts
@@ -32,7 +32,7 @@ export function addRoutes(router: Router, menus: menu[]) {
             router.addRoute('layout', {
                 name: menu.name,
                 path: menu.path, 
-                component: () => import('@/views/about/index.vue'),
+                component: () => import('@/views/echarts/index.vue'),
                 meta: {
                     name: menu.mate
                 }
